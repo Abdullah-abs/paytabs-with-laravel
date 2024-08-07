@@ -1,31 +1,38 @@
 {
-    "name": "baselrabia/paytabs-with-laravel",
-    "description": "integrate paytabs with laravel",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "baselrabia",
-            "email": "baselrabia@gmail.com"
-        }
-    ],
-    "minimum-stability": "stable",
-    "require": {
-        "php": "^7.2 || ^8.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Basel\\Paytabs\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Basel\\Paytabs\\PaytabsServiceProvider"
-            ],
-            "aliases": {
-                "Paytabs": "Basel\\Paytabs\\Facades\\PaytabsFacade"
-            }
-        }
+  "name": "baselrabia/paytabs-with-laravel",
+  "description": "integrate paytabs with laravel",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "baselrabia",
+      "email": "baselrabia@gmail.com"
     }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:Abdullah-abs/paytabs-with-laravel.git"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^7.2 || ^8.0",
+    "baselrabia/paytabs-with-laravel": "dev-main"
+  },
+  "autoload": {
+    "psr-4": {
+      "Basel\\Paytabs\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Basel\\Paytabs\\PaytabsServiceProvider"
+      ],
+      "aliases": {
+        "Paytabs": "Basel\\Paytabs\\Facades\\PaytabsFacade"
+      }
+    }
+  }
 }
